@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        nav {
+            height: 60px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            padding: 0 30px;
+            box-shadow: 0 2px 8px lightgray;
+        }
+
+        .logo {
+            margin-right: 50px;
+        }
+
+        .logo h1 {
+            color: #333;
+        }
+
+        .ul {
+            display: flex;
+            gap: 30px;
+            list-style-type: none;
+            align-items: center;
+        }
+
+        .ul li {
+            position: relative;
+        }
+
+        .ul a {
+            text-decoration: none;
+            color: black;
+            padding: 20px 5px;
+        }
+
+        .ul a:hover {
+            color: #555;
+        }
+
+        .buttons {
+            margin-left: auto;
+            display: flex;
+            gap: 10px;
+        }
+
+        .buttons button {
+            padding: 8px 15px;
+            border: 1px solid black;
+            background-color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .home {
+            position: relative;
+        }
+
+        .dropdown-container {
+            color: black;
+            border: 1px solid black;
+            position: absolute;
+            top: 35px;
+            left: 0;
+            width: 1100px;
+            background-color: white;
+            box-shadow: black 0px 5px 15px;
+            /* display: none; */
+            display: flex;
+            padding: 20px 40px;
+            gap: 30px;
+        }
+
+        .dropdown-container ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .dropdown-container li {
+            padding: 5px 0;
+        }
+
+        .dropdown-container a {
+            text-decoration: none;
+            color: #444;
+            padding: 0;
+        }
+
+        .dropdown-container .category a {
+            color: #c16b88;
+            font-weight: bold;
+        }
+
+        /* 
+        .home:hover > .dropdown-container {
+            display: block;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            <h1>logo.</h1>
+        </div>
+
+        <ul class="ul">
+
+            <li class="home">
+                <a href="">MEN</a>
+
+                <div class="dropdown-container">
+                    <div>
+                        <ul>
+                            <li class="category"><a href="">Topwear</a></li>
+                            <li><a href="">T-Shirts</a></li>
+                            <li><a href="">Casual Shirts</a></li>
+                            <li><a href="">Formal Shirts</a></li>
+                            <li><a href="">Sweatshirts</a></li>
+                            <li><a href="">Sweaters</a></li>
+                            <li><a href="">Jackets</a></li>
+                            <li><a href="">Blazers & Coats</a></li>
+                            <li><a href="">Suits</a></li>
+                            <li><a href="">Rain Jackets</a></li>
+
+                            <br>
+
+                            <li class="category"><a href="">Indian & Festive Wear</a></li>
+                            <li><a href="">Kurtas & Kurta Sets</a></li>
+                            <li><a href="">Sherwanis</a></li>
+                            <li><a href="">Nehru Jackets</a></li>
+                            <li><a href="">Dhotis</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="category"><a href="">Bottomwear</a></li>
+                            <li><a href="">Jeans</a></li>
+                            <li><a href="">Casual Trousers</a></li>
+                            <li><a href="">Formal Trousers</a></li>
+                            <li><a href="">Shorts</a></li>
+                            <li><a href="">Track Pants & Joggers</a></li>
+
+                            <br>
+
+                            <li class="category"><a href="">Innerwear & Sleepwear</a></li>
+                            <li><a href="">Briefs & Trunks</a></li>
+                            <li><a href="">Boxers</a></li>
+                            <li><a href="">Vests</a></li>
+                            <li><a href="">Sleepwear & Loungewear</a></li>
+                            <li><a href="">Thermals</a></li>
+
+                            <br>
+
+                            <li class="category"><a href="">Plus Size</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="category"><a href="">Footwear</a></li>
+                            <li><a href="">Casual Shoes</a></li>
+                            <li><a href="">Sports Shoes</a></li>
+                            <li><a href="">Formal Shoes</a></li>
+                            <li><a href="">Sneakers</a></li>
+                            <li><a href="">Sandals & Floaters</a></li>
+                            <li><a href="">Flip Flops</a></li>
+                            <li><a href="">Socks</a></li>
+
+                            <br>
+
+                            <li class="category"><a href="">Personal Care & Grooming</a></li>
+
+                            <br>
+
+                            <li class="category"><a href="">Sunglasses & Frames</a></li>
+
+                            <br>
+
+                            <li class="category"><a href="">Watches</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="category"><a href="">Sports & Active Wear</a></li>
+                            <li><a href="">Sports Shoes</a></li>
+                            <li><a href="">Sports Sandals</a></li>
+                            <li><a href="">Active T-Shirts</a></li>
+                            <li><a href="">Track Pants & Shorts</a></li>
+                            <li><a href="">Tracksuits</a></li>
+                            <li><a href="">Jackets & Sweatshirts</a></li>
+                            <li><a href="">Sports Accessories</a></li>
+                            <li><a href="">Swimwear</a></li>
+
+                            <br>
+
+                            <li class="category"><a href="">Gadgets</a></li>
+                            <li><a href="">Smart Wearables</a></li>
+                            <li><a href="">Fitness Gadgets</a></li>
+                            <li><a href="">Headphones</a></li>
+                            <li><a href="">Speakers</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li class="category"><a href="">Fashion Accessories</a></li>
+                            <li><a href="">Wallets</a></li>
+                            <li><a href="">Belts</a></li>
+                            <li><a href="">Perfumes & Body Mists</a></li>
+                            <li><a href="">Trimmers</a></li>
+                            <li><a href="">Deodorants</a></li>
+                            <li><a href="">Ties, Cufflinks & Pocket Squares</a></li>
+                            <li><a href="">Accessory Gift Sets</a></li>
+                            <li><a href="">Caps & Hats</a></li>
+                            <li><a href="">Mufflers, Scarves & Gloves</a></li>
+                            <li><a href="">Phone Cases</a></li>
+                            <li><a href="">Rings & Wristwear</a></li>
+                            <li><a href="">Helmets</a></li>
+
+                            <br>
+
+                            <li class="category"><a href="">Bags & Backpacks</a></li>
+
+                            <br>
+
+                            <li class="category"><a href="">Luggages & Trolleys</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+
+            <li><a href="">WOMEN</a></li>
+            <li><a href="">KIDS</a></li>
+            <li><a href="">HOME</a></li>
+            <li><a href="">BEAUTY</a></li>
+            <li><a href="">GENZ</a></li>
+            <li><a href="">STUDIO</a></li>
+
+        </ul>
+
+        <div class="buttons">
+            <button>Login</button>
+            <button>Register</button>
+        </div>
+
+    </nav>
+
+</body>
+
+</html>

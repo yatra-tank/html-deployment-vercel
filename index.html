@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #8fc8cf;
+            font-family: Arial, sans-serif;
+        }
+
+        .sidebar {
+            width: 300px;
+            height: 100vh;
+            background-color: white;
+            position: absolute;
+            right: 50px;
+            top: 0;
+            border-radius: 20px 20px 0 0;
+            padding: 28px 15px;
+        }
+
+        .company {
+            background-color: #f1f3f4;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .menu {
+            padding: 14px 12px;
+            margin-bottom: 8px;
+            font-size: 17px;
+            border-radius: 6px;
+        }
+
+        .menu:hover{
+            background-color: #e2fff1;
+        }
+
+        .active {
+            background-color: #e2fff1;
+        }
+
+        .notification {
+            float: right;
+            background-color: #d94b43;
+            color: white;
+            padding: 5px 9px;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .bottom {
+            position: absolute;
+            bottom: 25px;
+            width: 270px;
+        }
+
+        .profile {
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
+            margin-top: 15px;
+        }
+
+        .profile h4 {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .profile p {
+            margin-left: 50px;
+            color: gray;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <header class="company">
+            ALF Pte. Ltd.
+        </header>
+
+        <nav>
+            <ul>
+                <li class="menu active">
+                    Dashboard
+                </li>
+
+                <li class="menu">
+                    Notifications
+                    <span class="notification">4</span>
+                </li>
+
+                <li class="menu">
+                    Projects
+                </li>
+
+                <li class="menu">
+                    Tasks
+                </li>
+
+                <li class="menu">
+                    Analytics
+                </li>
+            </ul>
+        </nav>
+
+        <section class="bottom">
+
+            <ul>
+                <li class="menu">
+                    Settings
+                </li>
+
+                <li class="menu">
+                    Support
+                </li>
+            </ul>
+
+            <footer class="profile">
+                <h4>John Doe</h4>
+                <p>johndoe@gmail.com</p>
+            </footer>
+
+        </section>
+
+    </aside>
+
+</body>
+
+</html>
