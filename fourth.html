@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes animation1 {
+            0% {
+                transform: scale(0.8);
+                opacity: 0.5;
+                background-color: blueviolet;
+                border-radius: 50%;
+            }
+
+            100% {
+                transform: scale(1.2);
+                opacity: 1;
+                background-color: pink;
+                border-radius: 8px;
+            }
+        }
+
+        @keyframes animation2 {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .animation-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+        }
+
+        .box {
+            width: 60px;
+            height: 60px;
+        }
+
+        .primary-box {
+            animation-name: animation1;
+            animation-duration: 3s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-timing-function: linear;
+            animation-fill-mode: backwards;
+        }
+
+        .secondary-box {
+            animation-name: animation1, animation2;
+            animation-duration: 3s;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-timing-function: ease;
+            animation-fill-mode: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="animation-container">
+        <div class="box primary-box"></div>
+        <div class="box secondary-box"></div>
+    </div>
+</body>
+
+</html>
