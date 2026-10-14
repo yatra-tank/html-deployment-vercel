@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f2f2f2;
+            font-family: Georgia, serif;
+            padding: 20px;
+        }
+
+        .scoreboard {
+            width: 610px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .team {
+            display: flex;
+            gap: 10px;
+        }
+
+        .player-card {
+            width: 86px;
+            height: 120px;
+            background: #fff;
+            border: 1px solid #d7d7d7;
+            border-radius: 4px;
+            text-align: center;
+            padding-top: 8px;
+        }
+
+        .player-card img {
+            width: 48px;
+            height: 48px;
+            object-fit: contain;
+        }
+
+        .player-card p {
+            font-size: 11px;
+            margin-top: 4px;
+            line-height: 1.1;
+        }
+
+        .player-card h2 {
+            font-size: 18px;
+            font-weight: normal;
+            margin-top: 4px;
+        }
+
+        .score {
+            margin-top: 5px;
+        }
+
+        .score h1 {
+            font-size: 28px;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="scoreboard">
+        <div class="team">
+            <div class="player-card">
+                <img src="super-1.png">
+                <p>spiderman</p>
+                <h2>12</h2>
+            </div>
+
+            <div class="player-card">
+                <img src="super-2.png">
+                <p>captian<br>america</p>
+                <h2>30</h2>
+            </div>
+        </div>
+
+        <div class="score">
+            <h1>5 - 0</h1>
+        </div>
+
+        <div class="team">
+            <div class="player-card">
+                <img src="super-3.png">
+                <p>wonder<br>women</p>
+                <h2>50</h2>
+            </div>
+
+            <div class="player-card">
+                <img src="super-4.png">
+                <p>gem woman</p>
+                <h2>12</h2>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,101 +1,116 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Assignments</title>
+    <title>My HTML Assignments</title>
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f7f8;
+            background: #f4f6f9;
             margin: 0;
-            padding: 40px;
+            padding: 30px 20px;
+            color: #222;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
         }
 
         h1 {
             text-align: center;
-            color: #333;
+            color: #2563eb;
         }
 
-        table {
-            width: 80%;
-            margin: 30px auto;
-            border-collapse: collapse;
-            background-color: white;
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
         }
 
-        th, td {
-            border: 1px solid #ddd;
-            padding: 15px;
-            text-align: left;
+        h2 {
+            font-size: 20px;
+            margin-top: 30px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 8px;
         }
 
-        th {
-            background-color: skyblue;
+        .assignment-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
         }
 
         a {
-            color: #247b83;
+            display: block;
+            background: white;
+            padding: 18px;
+            border-radius: 10px;
             text-decoration: none;
+            color: #2563eb;
+            font-weight: bold;
+            border: 1px solid #e5e7eb;
+            transition: 0.2s;
         }
 
         a:hover {
-            text-decoration: underline;
+            background: #2563eb;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+            font-size: 14px;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>HTML & CSS Assignments and Practice</h1>
+    <div class="container">
 
-    <table>
-        <tr>
-            <th>S.No.</th>
-            <th>Assignment</th>
-            <th>Link</th>
-        </tr>
+        <h1>My HTML Assignments</h1>
+        <p class="subtitle">Table of Contents — Select an assignment to open it.</p>
 
-        <tr>
-            <td>1</td>
-            <td>Asidebar</td>
-            <td><a href="assignments/01-asidebar.html">Open Page</a></td>
-        </tr>
+        <h2>HTML Assignments</h2>
 
-        <tr>
-            <td>2</td>
-            <td>Myntra</td>
-            <td><a href="assignments/02-myntra.html">Open Page</a></td>
-        </tr>
+        <div class="assignment-list">
+            <a href="assignments/01-asidebar.html">01. Sidebar</a>
+            <a href="assignments/02-myntra.html">02. Myntra</a>
+            <a href="assignments/03-solar-system.html">03. Solar System</a>
+            <a href="assignments/04-flex.html">04. Flexbox</a>
+        </div>
 
-        <tr>
-            <td>3</td>
-            <td>Solar System</td>
-            <td><a href="assignments/03-solar-system.html">Open Page</a></td>
-        </tr>
+        <h2>Flexbox Assignments</h2>
 
-        <tr>
-            <td>4</td>
-            <td>Flex</td>
-            <td><a href="assignments/04-flex.html">Open Page</a></td>
-        </tr>
+        <div class="assignment-list">
+            <a href="flexbox%20assignment/01-superwars/">01. Superwars</a>
+            <a href="flexbox%20assignment/02-calculator.html">02. Calculator</a>
+            <a href="flexbox%20assignment/03-sudoku.html">03. Sudoku</a>
+            <a href="flexbox%20assignment/04-ludo.html">04. Ludo</a>
+            <a href="flexbox%20assignment/05-superover.html">05. Super Over</a>
+            <a href="flexbox%20assignment/06-cricket-app/">06. Cricket App</a>
+            <a href="flexbox%20assignment/07-kids-world/">07. Kids World</a>
+        </div>
 
-        <tr>
-            <td>5</td>
-            <td>Flex practice</td>
-            <td><a href="01.flex-practice.html">Open Page</a></td>
-        </tr>
+        <h2>Practice Projects</h2>
 
-        <tr>
-            <td>6</td>
-            <td>Animation</td>
-            <td><a href="03-animation.html">Open Page</a></td>
-        </tr>
+        <div class="assignment-list">
+            <a href="01.flex-practice.html">01. Flexbox Practice</a>
+            <a href="03-animation.html">02. Animation</a>
+        </div>
 
-    </table>
+    </div>
 
 </body>
-
 </html>

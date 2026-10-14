@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Scoreboard</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url("https://media.istockphoto.com/id/936417012/vector/cricket-stadium-vector-background.jpg?s=612x612&w=0&k=20&c=ktPUWBDjsTAYT0cjroYMkgJG3AQPLPuSOO1Vd8Urgyg=");
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+            color: white;
+            font-size: 60px;
+        }
+
+        h2 {
+            color: white;
+            font-size: 45px;
+        }
+
+        .scoreboard {
+            display: flex;
+            gap: 80px;
+            margin: 50px 0;
+        }
+
+        .team {
+            width: 330px;
+            height: 320px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .india {
+            background: #1976d2;
+        }
+
+        .pakistan {
+            background: #66bb33;
+        }
+
+        .balls {
+            display: flex;
+            gap: 10px;
+        }
+
+        .ball {
+            width: 45px;
+            height: 45px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 25px;
+        }
+
+        button {
+            width: 70px;
+            height: 70px;
+            border: none;
+            border-radius: 15px;
+            font-size: 35px;
+            cursor: pointer;
+        }
+
+        .bat {
+            background: orange;
+        }
+
+        .reset {
+            background: red;
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h2>SUPER OVER</h2>
+
+    <div class="scoreboard">
+
+        <div class="team india">
+
+            <h1>IND</h1>
+
+            <div class="balls">
+                <div class="ball">4</div>
+                <div class="ball">3</div>
+                <div class="ball">2</div>
+                <div class="ball">6</div>
+                <div class="ball">6</div>
+                <div class="ball">6</div>
+            </div>
+
+            <h2>27/0</h2>
+
+        </div>
+
+        <div class="team pakistan">
+
+            <h1>PAK</h1>
+
+            <div class="balls">
+                <div class="ball">2</div>
+                <div class="ball">4</div>
+                <div class="ball">0</div>
+                <div class="ball">3</div>
+                <div class="ball">1</div>
+                <div class="ball">4</div>
+            </div>
+
+            <h2>14/0</h2>
+
+        </div>
+
+    </div>
+
+    <div class="buttons">
+        <button class="bat">🏏</button>
+        <button class="reset">↻</button>
+    </div>
+
+</body>
+
+</html>

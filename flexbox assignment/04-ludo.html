@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .board {
+            display: grid;
+            grid-template-columns: 6fr 3fr 6fr;
+            grid-template-rows: 6fr 3fr 6fr;
+            width: 600px;
+            height: 600px;
+        }
+
+        .board>div {
+            border: 1px solid black;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .red {
+            background: red;
+            place-items: center;
+            display: grid;
+        }
+
+        .green {
+            background: green;
+            place-items: center;
+            display: grid;
+        }
+
+        .blue {
+            background: blue;
+            place-items: center;
+            display: grid;
+        }
+
+        .yellow {
+            background: yellow;
+            place-items: center;
+            display: grid;
+        }
+
+        .top-path,
+        .left-path,
+        .right-path,
+        .bottom-path {
+            background: white;
+        }
+
+        .center {
+            position: relative;
+        }
+
+        .red-triangle,
+        .green-triangle,
+        .blue-triangle,
+        .yellow-triangle {
+            position: absolute;
+        }
+
+        .red-triangle {
+            width: 0;
+            height: 0;
+
+            border-top: 60px solid red;
+            border-right: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+            border-left: 60px solid transparent;
+            rotate: -90deg;
+        }
+
+        .yellow-triangle {
+            width: 0;
+            height: 0;
+
+            border-top: 60px solid yellow;
+            border-right: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+            border-left: 60px solid transparent;
+            rotate: 90deg;
+        }
+
+        .blue-triangle {
+            width: 0;
+            height: 0;
+
+            border-top: 60px solid blue;
+            border-right: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+            border-left: 60px solid transparent;
+            rotate: 180deg;
+        }
+
+        .green-triangle {
+            width: 0;
+            height: 0;
+
+            border-top: 60px solid green;
+            border-right: 60px solid transparent;
+            border-bottom: 60px solid transparent;
+            border-left: 60px solid transparent;
+        }
+
+
+        .home {
+            display: grid;
+            place-items: center;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            background-color: white;
+            height: 70%;
+            width: 70%;
+        }
+
+        .token {
+            border-radius: 50%;
+            width: 30%;
+            height: 30%;
+        }
+
+        .red .token {
+            border: 3px solid red;
+        }
+
+        .green .token {
+            border: 3px solid green;
+        }
+
+        .blue .token {
+            border: 3px solid blue;
+        }
+
+        .yellow .token {
+            border: 3px solid yellow;
+        }
+
+        .path {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+        }
+
+        .path>div {
+            border: 0.5px solid black;
+        }
+
+        .path2 {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        .path2>div {
+            border: 0.5px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="board">
+
+        <div class="red">
+            <div class="home">
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+            </div>
+        </div>
+        <div class="path">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="green"></div>
+            <div class="green">☆</div>
+            <div class="green">☆</div>
+            <div class="green"></div>
+            <div></div>
+            <div></div>
+            <div class="green"></div>
+            <div></div>
+            <div></div>
+            <div class="green"></div>
+            <div></div>
+            <div></div>
+            <div class="green"></div>
+            <div></div>
+        </div>
+        <div class="green">
+            <div class="home">
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+            </div>
+        </div>
+
+        <div class="path2">
+            <div></div>
+            <div class="red">☆</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="red"></div>
+            <div class="red"></div>
+            <div class="red"></div>
+            <div class="red"></div>
+            <div class="red"></div>
+            <div></div>
+            <div></div>
+            <div class="red">☆</div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="center">
+            <div class="red-triangle"></div>
+            <div class="green-triangle"></div>
+            <div class="blue-triangle"></div>
+            <div class="yellow-triangle"></div>
+        </div>
+
+        <div class="path2">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="yellow">☆</div>
+            <div></div>
+            <div></div>
+            <div class="yellow"></div>
+            <div class="yellow"></div>
+            <div class="yellow"></div>
+            <div class="yellow"></div>
+            <div class="yellow"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="yellow">☆</div>
+            <div></div>
+        </div>
+
+        <div class="blue">
+            <div class="home">
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+            </div>
+        </div>
+        <div class="path">
+            <div></div>
+            <div class="blue"></div>
+            <div></div>
+            <div></div>
+            <div class="blue"></div>
+            <div></div>
+            <div></div>
+            <div class="blue"></div>
+            <div></div>
+            <div></div>
+            <div class="blue"></div>
+            <div class="blue">☆</div>
+            <div class="blue">☆</div>
+            <div class="blue"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="yellow">
+            <div class="home">
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

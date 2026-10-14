@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculator</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#1c1c1c;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.calculator{
+    display:grid;
+    grid-template-rows:auto 1fr;
+    gap:20px;
+    background:#1c1c1c;
+    padding:20px;
+}
+
+.display{
+    color:white;
+    font-size:70px;
+    text-align:right;
+    padding:20px 10px;
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(4,90px);
+    grid-auto-rows:90px;
+    gap:15px;
+}
+
+button{
+    border:none;
+    border-radius:50%;
+    font-size:32px;
+    cursor:pointer;
+}
+
+.number{
+    background:#505050;
+    color:white;
+}
+
+.function{
+    background:#d4d4d2;
+    color:black;
+}
+
+.operator{
+    background:#ff9500;
+    color:white;
+}
+
+.zero{
+    grid-column:span 2;
+    border-radius:45px;
+    text-align:left;
+    padding-left:35px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="calculator">
+
+    <div class="display">7744</div>
+
+    <div class="buttons">
+        <button class="function">C</button>
+        <button class="function">+/-</button>
+        <button class="function">%</button>
+        <button class="operator">÷</button>
+
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="operator">×</button>
+
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="operator">−</button>
+
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="operator">+</button>
+
+        <button class="number zero">0</button>
+        <button class="number">.</button>
+        <button class="operator">=</button>
+    </div>
+
+</div>
+
+</body>
+</html>
