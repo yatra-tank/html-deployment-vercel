@@ -12,12 +12,30 @@
             align-items: center;
         }
 
-        .banner img {
-            width: 100%;
+        header div{
+            display: flex;
+        }
+
+        .banner {
+            background-image: url(kw-background.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 50px;
+        }
+
+        .banner p {
+            color: white;
+            font-size: 50px;
+            line-height: 25px;
+        }
+
+        .banner span {
+            color: white;
         }
 
         .product {
             display: flex;
+            justify-content: space-evenly;
             gap: 20px;
             flex-wrap: wrap;
         }
@@ -68,11 +86,17 @@
 
     <header>
         <img src="kw-logo.png">
-        <img src="cart-icon.png">
+        <div>
+            <img src="cart-icon.png">
+            <p>Cart Items(0)</p>
+        </div>
     </header>
 
     <div class="banner">
-        <img src="kw-background.png">
+        <p>Shop.</p>
+        <p>Have Fun.</p>
+        <p>Repeat.</p>
+        <span>#NewAndNow</span>
     </div>
 
     <div class="main">
