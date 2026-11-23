@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .cont {
+            position: relative;
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+        }
+
+        .cont div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .red {
+            background-color: red;
+            clip-path: polygon(0 0, 100% 0, 50% 50%);
+        }
+
+        .blue {
+            background-color: blue;
+            clip-path: polygon(100% 0, 100% 100%, 50% 50%);
+        }
+
+        .green {
+            background-color: green;
+            clip-path: polygon(100% 100%, 0 100%, 50% 50%);
+        }
+
+        .yellow {
+            background-color: yellow;
+            clip-path: polygon(0 100%, 0 0, 50% 50%);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cont">
+        <div class="red"></div>
+        <div class="blue"></div>
+        <div class="green"></div>
+        <div class="yellow"></div>
+    </div>
+
+</body>
+</html>
